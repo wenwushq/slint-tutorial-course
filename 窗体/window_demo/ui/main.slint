@@ -1,0 +1,28 @@
+export component MainWindow inherits Window {
+    //注意：设置width和height的话，最大化按钮不能用
+    //width: 800px; //窗口固定宽度
+    //height: 600px; //窗口固定高度
+    //preferred-width: 800px; //窗口首选宽度
+    //preferred-height: 600px; //窗口首选高度
+    //min-height: 300px; //窗口最小高度
+    //min-width: 400px; //窗口最小宽度
+    //max-width: 800px; //窗口最大宽度
+    //max-height: 600px; //窗口最大高度
+
+    always-on-top: false; //默认值为false，设置为true后窗口将始终保持在其他窗口之上
+    title: "Slint 窗口示例";
+    full-screen: false; //默认值为false，设置为true后窗口将占满整个屏幕
+    //visible: false; //默认值为true，设置为false后窗口将不可见
+    //background: #00000000; //窗口背景颜色，默认值为#ffffff（白色）
+    background: #888888;
+    default-font-family: "Arial"; //默认字体，默认值为系统默认字体
+    default-font-size: 14px; //默认字体大小，默认值为12px
+    default-font-weight: 400; //默认字体粗细，默认值为400（正常）取值范围为100-900，数值越大字体越粗
+    icon: @image-url("assets/icon.png"); //窗口图标，默认值为无图标
+    no-frame: false; //默认值为false，设置为true后窗口将没有边框和标题栏
+    resize-border-width: 5px; //调整窗口大小时边框的宽度，默认值为5px
+
+    /*Image {
+        source: @image-url("assets/back.png");
+    }*/
+}
