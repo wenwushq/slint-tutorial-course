@@ -1,0 +1,26 @@
+export component MainWindow inherits Window {
+    background: #f0f0f0;
+    popup := PopupWindow {
+        Rectangle {
+            height: 100%;
+            width: 100%;
+            background: yellow;
+        }
+
+        x: 20px; //窗口的x坐标 （相对于父窗口MainWindow）
+        y: 20px; //窗口的y坐标 （相对于父窗口MainWindow）
+        height: 500px;
+        width: 500px;
+        close-policy: close-on-click; //关闭策略，点击即可关闭弹窗
+        //close-policy: close-on-click-outside; //关闭策略，点击弹窗外部即可关闭弹窗
+        //close-policy: no-auto-close; //关闭策略，不自动关闭弹窗，需要手动调用popup.close()方法来关闭弹窗
+    }
+
+    TouchArea {
+        height: 100%;
+        width: 100%;
+        clicked => {
+            popup.show();
+        }
+    }
+}

@@ -1,0 +1,20 @@
+import { StandardButton } from "std-widgets.slint";
+export component MainWindow inherits Dialog {
+    width: 400px;
+    height: 300px;
+    Text {
+        text: "对话框必须要有一个非StandardButton的子组件，否则编译会出错";
+        horizontal-alignment: center;
+        vertical-alignment: center;
+    }
+
+    StandardButton {
+        kind: cancel;
+        height: 30px;
+    }
+
+    StandardButton {
+        kind: ok;
+        height: 30px;
+    }
+}
