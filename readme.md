@@ -1,8 +1,8 @@
 # Slint基本教程
 ## 窗体
 * [Window](./窗体/Window.md)
-* Dialog
-* PopupWindow
+* [Dialog](./窗体/Dialog.md)
+* [PopupWindow](./窗体/PopupWindow.md)
 
 ## 布局
 * HorizontalLayout
@@ -25,11 +25,6 @@
 
 ## 其他
 * Timer
-
-## GIT仓库地址
-https://github.com/wenwushq/slint-tutorial-course
-
-https://gitee.com/elephantsoft/slint-basic-tutorial
 
 # 感谢支持
 ![](./感谢.png)
