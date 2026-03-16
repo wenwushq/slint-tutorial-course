@@ -4,6 +4,7 @@
 * icon: 图标，默认值为无图标，**支持png、svg图片** 例 @image-url("assets/icon.png")
 * checkable：菜单前是否显示checkbox
 * checked：菜单前的checkbox是否选中
+* activated：回调函数 MenuItem激活时会被调用
 
 ## 注意
 * 当checkable为true时，设置icon后icon是不显示的
