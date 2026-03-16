@@ -10,9 +10,9 @@
 * hide()：隐藏菜单
 
 ## 参考
-* [Menu](./../控件/Menu.md)
-* [MenuItem](./../控件/MenuItem.md)
-* [MenuSeparator](./../控件/MenuSeparator.md)
+* [Menu](../控件/Menu.md)
+* [MenuItem](../控件/MenuItem.md)
+* [MenuSeparator](../控件/MenuSeparator.md)
 
 ## 注意
 1. ContextMenuAre为非可视化窗体，必须要且只有一个Menu子组件，否则编译会出错
