@@ -13,7 +13,7 @@
 * [MenuSeparator](../控件/MenuSeparator.md)
 
 ## 注意
-1. MenuBar必须要且只有一个Menu子组件，否则编译会出错
+1. 无
 
 ## 示例代码
 ```
