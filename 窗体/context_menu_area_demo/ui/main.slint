@@ -1,0 +1,36 @@
+export component MainWindow inherits Window {
+    ContextMenuArea {
+        enabled: true;
+        Menu {
+            MenuItem {
+                title: @tr("Cut");
+                activated => { debug("Cut"); }
+                icon: @image-url("./assets/cut.png");
+                checkable: true;
+                checked: true;
+            }
+            MenuItem {
+                title: @tr("Copy");
+                activated => { debug("Copy"); }
+                icon: @image-url("./assets/copy.png");
+                checkable: true;
+                checked: false;
+            }
+            MenuItem {
+                title: @tr("Paste");
+                activated => { debug("Paste"); }
+                icon: @image-url("./assets/paste.png");
+            }
+            MenuSeparator {}
+            Menu {
+                title: @tr("Find");
+                MenuItem {
+                    title: @tr("Find Next");
+                }
+                MenuItem {
+                    title: @tr("Find Previous");
+                }
+            }
+        }
+    }
+}
