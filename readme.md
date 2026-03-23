@@ -7,8 +7,9 @@
 * [MenuBar](./窗体/MenuBar.md)
 
 ## 布局
-* HorizontalLayout
-* VerticalLayout
+* [HorizontalLayout](./布局/HorizontalLayout.md)
+* [VerticalLayout](./布局/VerticalLayout.md)
+* GridLayout
 * GridLayout
 
 ## 控件
