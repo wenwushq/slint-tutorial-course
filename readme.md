@@ -9,8 +9,7 @@
 ## 布局
 * [HorizontalLayout](./布局/HorizontalLayout.md)
 * [VerticalLayout](./布局/VerticalLayout.md)
-* GridLayout
-* GridLayout
+* [GridLayout](./布局/GridLayout.md)
 
 ## 控件
 * Rectangle
