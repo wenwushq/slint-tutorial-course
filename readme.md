@@ -12,6 +12,8 @@
 * [GridLayout](./布局/GridLayout.md)
 
 ## 控件
+* [Image](./控件/Image.md)
+* [Path](./控件/Path.md)
 * Rectangle
 * Button
 * CheckBox
@@ -22,7 +24,6 @@
 * TextEdit
 * ScrollView
 * ListView
-* Image
 * Text
 * [Menu](./控件/Menu.md)
 * [MenuItem](./控件/MenuItem.md)
