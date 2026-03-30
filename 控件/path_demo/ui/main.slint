@@ -1,0 +1,21 @@
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 500px;
+    Path {
+        //width: 100px;
+        //height: 100px;
+        commands: "M110,0  h90 v90 h-90 z M130,20 h50 v50 h-50 z";
+        stroke: blue;// 描边颜色
+        stroke-width: 5px;
+        fill: #ff0000; // 填充颜色
+        //fill-rule: nonzero;
+        //fill-rule: evenodd;
+        //stroke-line-cap: butt; // 线条末端样式
+        //stroke-line-cap: round; // 线条末端样式
+        //stroke-line-cap: square; // 线条末端样式
+        //stroke-line-join: miter; // 线条连接样式
+        //stroke-line-join: round; // 线条连接样式
+        //stroke-line-join: bevel; // 线条连接样式
+       anti-alias: true; // 是否启用抗锯齿
+    }
+}

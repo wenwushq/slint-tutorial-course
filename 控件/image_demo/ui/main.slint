@@ -1,0 +1,63 @@
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 500px;
+    
+    Image {
+        x: 100px;
+        y: 0px;
+        width: 200px;
+        height: 200px;
+        source: @image-url("assets/Slint.png");// 编译时就需要确认图片路径存在，否则会报错
+        colorize: #ff0000; // 以给定的颜色着色图像
+        //image-rendering: pixelated; // 使用像素化的方式渲染图像，适合放大位图图像时保持清晰度
+        //image-rendering: smooth; // 使用平滑的方式渲染图像，适合缩小位图图像时保持清晰度
+    }
+    Image {
+        x: 100px;
+        y: 200px;
+        width: 200px;
+        height: 200px;
+        source: @image-url("assets/Slint.svg");
+        //colorize: #ff0000; // 以给定的颜色着色图像
+        //horizontal-tiling: none; // 水平平铺图像
+        //vertical-tiling: none; // 垂直平铺图像
+        //horizontal-tiling: repeat; // 水平平铺图像
+        //vertical-tiling: repeat; // 垂直平铺图像
+        //horizontal-tiling: round; // 水平平铺图像
+        //vertical-tiling: round; // 垂直平铺图像
+        //image-fit: fill; // 图像拉伸以填充组件，可能会改变宽高比
+        //image-fit: contain; // 图像适应组件，保持宽高比
+        //image-fit: cover; // 图像覆盖组件，保持宽高比，可能会裁剪图像
+        //image-fit: preserve; // 图像适应组件，保持宽高比，可能会留空白
+        //image-rendering: pixelated; // 使用像素化的方式渲染图像，适合放大位图图像时保持清晰度
+        //transform-origin: {x: 100px, y: 100px}; // 旋转中心点的位置
+        //transform-rotation: 45deg; // 旋转图像，单位可以是deg（度）或rad（弧度）
+    }
+
+    /*VerticalLayout {
+        spacing: 10px;
+        Image{
+            source: @image-url("assets/Slint.svg");
+            horizontal-alignment: center;
+            vertical-alignment: center;
+        }
+        Image{
+            source: @image-url("assets/Slint.svg");
+            horizontal-alignment: left;
+            vertical-alignment: top;
+        }
+        Image{
+            source: @image-url("assets/Slint.svg");
+             horizontal-alignment: right;
+            vertical-alignment: bottom;
+        }
+    }*/
+
+    /*Image {
+        source: @image-url("assets/Slint.svg");
+        source-clip-x: 10; // 从图像的左边开始裁剪
+        source-clip-y: 10; // 从图像的顶部开始裁剪
+        //source-clip-width: 15; // source.width - source-clip-x;
+        //source-clip-height: 15; // source.height - source-clip-y;
+    }*/
+}
