@@ -16,7 +16,8 @@
 * [Path](./控件/Path.md)
 * [Rectangle](./控件/Rectangle.md)
 * [Text](./控件/Text.md)
-* Button
+* [TextInput](./控件/TextInput.md)
+* [Button](./控件/Button.md)
 * CheckBox
 * ComboBox
 * SpinBox
