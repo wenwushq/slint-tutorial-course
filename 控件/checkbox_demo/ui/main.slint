@@ -1,0 +1,17 @@
+import { CheckBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    checkItem := CheckBox {
+        x: 5px;
+        //width: parent.width;
+        //height: parent.height;
+        text: "复选框"; //复选框文本
+        //checked: true;  //复选框是否选中
+        //enabled: false; //复选框是否可用
+        toggled() => { //复选框状态改变时触发的事件
+            checkItem.text = "复选框 " + (self.checked ? "选中" : "未选中");
+        }
+    }
+}

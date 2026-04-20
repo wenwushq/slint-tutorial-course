@@ -1,0 +1,18 @@
+import { ComboBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    ComboBox {
+        x: 5px;
+        y: 5px;
+        width: 100px;
+        model: ["选项一", "选项二", "选项三"]; // 设置下拉列表的选项
+        current-index: 1; // 设置下拉列表选中项 从0开始计数
+        current-value: "选项三"; // 设置下拉列表选中项的值
+        enabled: true; // 下拉列表是否可用
+        selected(value) => { // 选项被选中时触发的事件
+            debug("Selected value: ", value);
+        }
+    }
+}

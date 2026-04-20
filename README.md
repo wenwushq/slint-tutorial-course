@@ -18,8 +18,8 @@
 * [Text](./控件/Text.md)
 * [TextInput](./控件/TextInput.md)
 * [Button](./控件/Button.md)
-* CheckBox
-* ComboBox
+* [CheckBox](./控件/CheckBox.md)
+* [ComboBox](./控件/ComboBox.md)
 * SpinBox
 * Slider
 * LineEdit
