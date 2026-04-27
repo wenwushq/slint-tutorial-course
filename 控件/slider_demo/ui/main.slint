@@ -1,0 +1,24 @@
+import { Slider } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    Slider {
+        width: 90%;
+        height: 30px;  
+        value: 50; //滑块的当前值 默认值为0
+        maximum: 100; //滑块的最大值 默认值为100
+        minimum: 0; //滑块的最小值 默认值为0
+        //orientation: horizontal; //滑块的方向 可选值为"horizontal"或"vertical" 默认值为"horizontal"
+        /*width: 30px;
+        height: 90%;
+        orientation: vertical;*/
+        step: 5; //按方向键时滑块的步长 默认值为1 水平方向时按左右键增加或减少值 垂直方向时按上或下键增加或减少值
+        changed(value) => { //当滑块的值发生变化时触发的事件
+            debug("new value:", value);
+        }
+        released(pos) => { //当滑块鼠标释放或方向键抬起时触发的事件
+            debug("released at position:", pos)
+        }
+    }
+}

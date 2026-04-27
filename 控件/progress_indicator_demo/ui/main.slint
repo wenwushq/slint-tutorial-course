@@ -1,0 +1,12 @@
+import { ProgressIndicator } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    ProgressIndicator {
+        width: 90%;
+        height: 30px;  
+        //indeterminate: true; //进度条的进度是否是不确定的 如果操作的进度无法通过数值确定，则设置为 true。
+        progress: 0.6; //进度条的当前进度值，范围从 0.0 到 1.0。
+    }
+}

@@ -20,8 +20,10 @@
 * [Button](./控件/Button.md)
 * [CheckBox](./控件/CheckBox.md)
 * [ComboBox](./控件/ComboBox.md)
-* SpinBox
-* Slider
+* [ProgressIndicator](./控件/ProgressIndicator.md)
+* [Spinner](./控件/Spinner.md)
+* [Slider](./控件/Slider.md)
+* [SpinBox](./控件/SpinBox.md)
 * LineEdit
 * TextEdit
 * ScrollView
