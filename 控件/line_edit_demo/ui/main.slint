@@ -1,0 +1,18 @@
+import { LineEdit } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    LineEdit {
+        height: 50px; //编辑框的高度
+        text: "编辑框"; //编辑框的文本标签
+        //enabled: false; //编辑框是否可用
+        //font-size: 20px; //编辑框的字体大小 默认值为0px
+        //font-family: "Arial"; //编辑框的字体类型 默认值为""
+        //font-italic: true; //编辑框的字体是否斜体 默认值为false
+        //horizontal-alignment: start; //水平对齐方式 默认值为left 可选值为left、center、right、start（文字方向的起始位置）、end（文字方向的结束位置）
+        //input-type: password; //输入类型，取值text（文本，默认值） password（密码）number（数字）decimal（小数）
+        //placeholder-text: "请输入内容"; //编辑框的占位文本
+        //read-only: true; //编辑框是否只读 默认值为false
+    }
+}

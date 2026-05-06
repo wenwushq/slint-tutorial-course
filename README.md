@@ -24,7 +24,8 @@
 * [Spinner](./控件/Spinner.md)
 * [Slider](./控件/Slider.md)
 * [SpinBox](./控件/SpinBox.md)
-* LineEdit
+* [Switch](./控件/Switch.md)
+* [LineEdit](./控件/LineEdit.md)
 * TextEdit
 * ScrollView
 * ListView

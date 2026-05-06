@@ -1,0 +1,16 @@
+import { Switch } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    Switch {
+        //height: 10px; //开关组件的高度
+        //checked: true; //开关组件是否打开
+        //enabled: false; //开关组件是否可用
+        text: "开关组件"; //开关组件的文本标签
+        toggled => { //当开关组件的状态发生变化时触发的事件
+            self.text = "开关组件 " + (self.checked ? "开" : "关");
+        }
+       
+    }
+}
