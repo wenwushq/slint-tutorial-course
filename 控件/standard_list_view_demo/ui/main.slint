@@ -1,0 +1,38 @@
+import { StandardListView } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    StandardListView {
+        width: 100px; //标准列表视图的宽度
+        height: 100%; //标准列表视图的高度
+        enabled: true; //是否启用标准列表视图 默认值为true
+        //vertical-scrollbar-policy: always-off; //禁用垂直滚动条
+        //vertical-scrollbar-policy: as-needed; //根据需要显示垂直滚动条 默认值
+        //vertical-scrollbar-policy: always-on; //始终显示垂直滚动条
+        //current-item: 2; //当前选中的项的索引 默认值为-1，表示没有选中任何项
+       
+        model: [ //标准列表视图的数据模型
+            { text: "Blue11111111111111111111" },
+            { text: "Red" },
+            { text: "Green" },
+            { text: "Yellow" },
+            { text: "Black" },
+            { text: "White" },
+            { text: "Magenta" },
+            { text: "Cyan" }
+        ];
+
+        scrolled() => {
+            //当滚动视图被滚动时触发
+            debug("viewport-x: ", self.viewport-x);
+            debug("viewport-y: ", self.viewport-y);
+        }
+        /*current-item-changed(index) => { //当前选中的项发生变化时触发
+            debug("Current item: ", index);
+        }*/
+        /*item-pointer-event(index, event, point) => { //当项发生指针事件时触发
+            debug("Item pointer event: ", index, event, point);
+        }*/
+    }
+}
