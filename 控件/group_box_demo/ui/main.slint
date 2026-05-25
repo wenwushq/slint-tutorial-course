@@ -1,0 +1,17 @@
+import { GroupBox , VerticalBox, CheckBox } from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 200px;
+    GroupBox {
+        height: 150px; //分组框的高度
+        width: 300px; //分组框的宽度
+        title: "分组框"; //分组框的标题
+        enabled: false; //分组框是否可用
+        //content-padding: 10px; //分组框内容的内边距
+        VerticalLayout {
+            CheckBox { text: "Bread"; checked: true ;}
+            CheckBox { text: "Fruits"; }
+        }
+    }
+}

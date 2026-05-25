@@ -1,0 +1,30 @@
+import { TimePickerPopup, Button} from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 600px;
+
+    Button {
+        text: "打开 时间选择弹出框";
+
+        clicked => {
+            time-picker.show();
+        }
+    }
+
+    time-picker := TimePickerPopup {
+        x: (root.width - self.width) / 2; //水平居中
+        y: (root.height - self.height ) / 2; //垂直居中
+        close-policy: PopupClosePolicy.no-auto-close; //设置弹出框不自动关闭
+        title: "时间选择弹出框"; //时间选择弹出框的标题
+        //use-24-hour-format: false; //是否使用24小时制
+        //time: { hour: 6, minute: 30, second: 25 }; //默认时间
+        
+        accepted(date) => { //当用户点击“确定”按钮时触发
+            debug("选择的时间: ", date.hour, date.minute, date.second);
+        }
+        canceled => { //当用户点击“取消”按钮时触发
+            time-picker.close();
+        }
+    }
+}

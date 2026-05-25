@@ -30,8 +30,11 @@
 * [ScrollView](./控件/ScrollView.md)
 * [StandardListView](./控件/StandardListView.md)
 * [StandardTableView](./控件/StandardTableView.md)
-* TextEdit
-* ScrollView
+* [TabWidget](./控件/TabWidget.md)
+* [TextEdit](./控件/TextEdit.md)
+* [GroupBox](./控件/GroupBox.md)
+* [DatePickerPopup](./控件/DatePickerPopup.md)
+* [TimePickerPopup](./控件/TimePickerPopup.md)
 * [Menu](./控件/Menu.md)
 * [MenuItem](./控件/MenuItem.md)
 * [MenuSeparator](./控件/MenuSeparator.md)

@@ -1,0 +1,29 @@
+import { DatePickerPopup, Button} from "std-widgets.slint";
+
+export component MainWindow inherits Window {
+    width: 400px;
+    height: 600px;
+
+    Button {
+        text: "打开 日期选择弹出框";
+
+        clicked => {
+            date-picker.show();
+        }
+    }
+
+    date-picker := DatePickerPopup {
+        x: (root.width - self.width) / 2; //水平居中
+        y: (root.height - self.height ) / 2; //垂直居中
+        close-policy: PopupClosePolicy.no-auto-close; //设置弹出框不自动关闭
+        title: "日期选择弹出框"; //日期选择弹出框的标题
+        date: { year: 2026, month: 6, day: 15 }; //默认日期
+        
+        accepted(date) => { //当用户点击“确定”按钮时触发
+            debug("选择的日期: ", date.year, date.month, date.day);
+        }
+        canceled => { //当用户点击“取消”按钮时触发
+            date-picker.close();
+        }
+    }
+}
